@@ -191,16 +191,21 @@ Function GetTypeNameFromDefinition
         [Object]$Object
     )
 
-    if ($Object.MemberType -eq [System.Management.Automation.PSMemberTypes]::AliasProperty) # find the underlying property
+    if ($Object.MemberType -eq [System.Management.Automation.PSMemberTypes]::ScriptProperty) # just return the property name
     {
-         $Object = $script:properties | Where Name -eq ($Object.Definition.Split(" ") | Select -Last 1)
+         return $Object.Name
     }
 
-    $output = $Object.Definition.Split(" ") | Select -First 1
+    if ($Object.MemberType -eq [System.Management.Automation.PSMemberTypes]::AliasProperty) # find the underlying property
+    {
+         $Object = $script:properties | Where-Object Name -eq ($Object.Definition.Split(" ") | Select-Object -Last 1)
+    }
+
+    $output = $Object.Definition.Split(" ") | Select-Object -First 1
 
     if ($output -match "\.")
     {
-        $output = $type.Split(".") | Select -Last 1
+        $output = $output.Split(".") | Select-Object -Last 1
     }
 
     return $output

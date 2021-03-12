@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="2" errors="0" failures="0" not-run="24" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2021-03-12" time="11:42:59">
+  <environment clr-version="4.0.30319.42000" user-domain="DAISYGROUP" cwd="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml" platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition4" machine-name="ARR-HYPERV-VM" nunit-version="2.5.8.0" os-version="10.0.19042" user="ARR" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="7.1976" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1" executed="True" result="Success" success="True" time="7.1976" asserts="0" description="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="TestByInputObject" executed="True" result="Success" success="True" time="2.9388" asserts="0" description="TestByInputObject">
+            <results>
+              <test-suite type="TestFixture" name="TestByInputObject.MixedObjectArrayList" executed="True" result="Success" success="True" time="1.6145" asserts="0" description="TestByInputObject.MixedObjectArrayList">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed as a parameter" time="0.7072" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed in the pipeline" time="0.0508" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
