@@ -1,17 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="2" errors="0" failures="0" not-run="24" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2021-03-12" time="11:42:59">
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="26" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2021-03-13" time="14:29:43">
   <environment clr-version="4.0.30319.42000" user-domain="DAISYGROUP" cwd="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml" platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition4" machine-name="ARR-HYPERV-VM" nunit-version="2.5.8.0" os-version="10.0.19042" user="ARR" />
   <culture-info current-culture="en-GB" current-uiculture="en-GB" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="7.1976" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="6.4769" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1" executed="True" result="Success" success="True" time="7.1976" asserts="0" description="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1">
+      <test-suite type="TestFixture" name="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1" executed="True" result="Success" success="True" time="6.4769" asserts="0" description="C:\Users\arr.DAISYGROUP\repos\Projects\ConvertTo-StyledHtml\ConvertTo-FormattedHtmlTable.Tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="TestByInputObject" executed="True" result="Success" success="True" time="2.9388" asserts="0" description="TestByInputObject">
+          <test-suite type="TestFixture" name="TestByInputObject" executed="True" result="Success" success="True" time="4.6173" asserts="0" description="TestByInputObject">
             <results>
-              <test-suite type="TestFixture" name="TestByInputObject.MixedObjectArrayList" executed="True" result="Success" success="True" time="1.6145" asserts="0" description="TestByInputObject.MixedObjectArrayList">
+              <test-suite type="TestFixture" name="TestByInputObject.Scalar" executed="True" result="Success" success="True" time="0.8404" asserts="0" description="TestByInputObject.Scalar">
                 <results>
-                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed as a parameter" time="0.7072" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed in the pipeline" time="0.0508" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.Scalar.Returns the correct response when only the input object is passed as a parameter" time="0.2825" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.Scalar.Returns the correct response when only the input object is passed in the pipeline" time="0.022" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.ScalarArray" executed="True" result="Success" success="True" time="1.0729" asserts="0" description="TestByInputObject.ScalarArray">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.ScalarArray.Returns the correct response when only the input object is passed as a parameter" time="0.1144" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.ScalarArray.Returns the correct response when only the input object is passed in the pipeline" time="0.0178" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.String" executed="True" result="Success" success="True" time="1.2793" asserts="0" description="TestByInputObject.String">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.String.Returns the correct response when only the input object is passed as a parameter" time="0.031" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.String.Returns the correct response when only the input object is passed in the pipeline" time="0.0629" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.StringArray" executed="True" result="Success" success="True" time="1.6338" asserts="0" description="TestByInputObject.StringArray">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.StringArray.Returns the correct response when only the input object is passed as a parameter" time="0.1683" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.StringArray.Returns the correct response when only the input object is passed in the pipeline" time="0.0281" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.Date" executed="True" result="Success" success="True" time="2.1684" asserts="0" description="TestByInputObject.Date">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.Date.Returns the correct response when only the input object is passed as a parameter" time="0.0877" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.Date.Returns the correct response when only the input object is passed in the pipeline" time="0.0651" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.Hash" executed="True" result="Success" success="True" time="2.3746" asserts="0" description="TestByInputObject.Hash">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.Hash.Returns the correct response when only the input object is passed as a parameter" time="0.0339" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.Hash.Returns the correct response when only the input object is passed in the pipeline" time="0.0313" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.HashArray" executed="True" result="Success" success="True" time="2.5301" asserts="0" description="TestByInputObject.HashArray">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.HashArray.Returns the correct response when only the input object is passed as a parameter" time="0.0329" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.HashArray.Returns the correct response when only the input object is passed in the pipeline" time="0.0298" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.Object" executed="True" result="Success" success="True" time="2.8461" asserts="0" description="TestByInputObject.Object">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.Object.Returns the correct response when only the input object is passed as a parameter" time="0.1266" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.Object.Returns the correct response when only the input object is passed in the pipeline" time="0.1211" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.ObjectArray" executed="True" result="Success" success="True" time="3.1921" asserts="0" description="TestByInputObject.ObjectArray">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.ObjectArray.Returns the correct response when only the input object is passed as a parameter" time="0.0348" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.ObjectArray.Returns the correct response when only the input object is passed in the pipeline" time="0.2316" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.CustomObject" executed="True" result="Success" success="True" time="3.3787" asserts="0" description="TestByInputObject.CustomObject">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.CustomObject.Returns the correct response when only the input object is passed as a parameter" time="0.047" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.CustomObject.Returns the correct response when only the input object is passed in the pipeline" time="0.0329" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.CustomObjectArray" executed="True" result="Success" success="True" time="3.6757" asserts="0" description="TestByInputObject.CustomObjectArray">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.CustomObjectArray.Returns the correct response when only the input object is passed as a parameter" time="0.0412" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.CustomObjectArray.Returns the correct response when only the input object is passed in the pipeline" time="0.0359" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.CustomObjectArrayList" executed="True" result="Success" success="True" time="3.8215" asserts="0" description="TestByInputObject.CustomObjectArrayList">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.CustomObjectArrayList.Returns the correct response when only the input object is passed as a parameter" time="0.0367" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.CustomObjectArrayList.Returns the correct response when only the input object is passed in the pipeline" time="0.0258" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestByInputObject.MixedObjectArrayList" executed="True" result="Success" success="True" time="4.2051" asserts="0" description="TestByInputObject.MixedObjectArrayList">
+                <results>
+                  <test-case description="Returns the correct response when only the input object is passed as a parameter" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed as a parameter" time="0.043" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Returns the correct response when only the input object is passed in the pipeline" name="TestByInputObject.MixedObjectArrayList.Returns the correct response when only the input object is passed in the pipeline" time="0.0294" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>

@@ -362,131 +362,131 @@ BeforeAll {
 Describe 'TestByInputObject' {
     
     Context 'Scalar' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $scalar | Clean) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($scalar | ConvertTo-FormattedHtmlTable2 | Clean) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult | Clean)
         }
     }
 
     Context 'ScalarArray' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $scalarArray | Clean) | Should -Be (TestByInoutObject_Array_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($scalarArray | ConvertTo-FormattedHtmlTable2) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult)
         }
     }
 
     Context 'String' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $string | Clean) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($string | ConvertTo-FormattedHtmlTable2) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult)
         }
     }
 
     Context 'StringArray' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $stringArray | Clean) | Should -Be (TestByInoutObject_Array_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($stringArray | ConvertTo-FormattedHtmlTable2) | Should -Be (TestByInoutObject_EmptyTable_ExpectedResult)
         }
     }
 
     Context 'Date' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $date | Clean) | Should -Be (TestByInoutObject_Date_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($date | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_Date_ExpectedResult | Clean)
         }
     }
 
     Context 'Hash' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $hash | Clean) | Should -Be (TestByInoutObject_Hash_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($hash | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_Hash_ExpectedResult | Clean)
         }
     }
 
     Context 'HashArray' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $hashArray | Clean) | Should -Be (TestByInoutObject_Array_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($hashArray | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_Hash_ExpectedResult | Clean)
         }
     }
 
     Context 'Object' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $object | Clean) | Should -Be (TestByInoutObject_Object_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($object | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_Object_ExpectedResult | Clean)
         }
     }
 
     Context 'ObjectArray' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $objectArray | Clean) | Should -Be (TestByInoutObject_Array_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($objectArray | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_Object_ExpectedResult | Clean)
         }
     }
 
     Context 'CustomObject' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $customObject | Clean) | Should -Be (TestByInoutObject_CustomObject_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($customObject | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_CustomObject_ExpectedResult | Clean)
         }
     }
 
     Context 'CustomObjectArray' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $customObjectArray | Clean) | Should -Be (TestByInoutObject_Array_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($customObjectArray | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_CustomObject_ExpectedResult | Clean)
         }
     }
 
     Context 'CustomObjectArrayList' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $customObjectArrayList | Clean) | Should -Be (TestByInoutObject_CustomObjectArrayList_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($customObjectArrayList | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_CustomObject_ExpectedResult | Clean)
         }
     }
 
     Context 'MixedObjectArrayList' {
-        It 'Returns the correct response when only the input object is passed as a parameter' {
+        It 'Returns the correct response when the input object is passed as a parameter' {
             (ConvertTo-FormattedHtmlTable2 -InputObject $mixedObjectArrayList | Clean) | Should -Be (TestByInoutObject_CustomObjectArrayList_ExpectedResult | Clean)
         }
 
-        It 'Returns the correct response when only the input object is passed in the pipeline' {
+        It 'Returns the correct response when the input object is passed in the pipeline' {
             ($mixedObjectArrayList | ConvertTo-FormattedHtmlTable2) | Clean | Should -Be (TestByInoutObject_CustomObject_ExpectedResult | Clean)
         }
     }
